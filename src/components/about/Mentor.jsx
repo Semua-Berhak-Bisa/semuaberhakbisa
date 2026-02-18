@@ -93,7 +93,7 @@ function Card({ img, nama, ig, li, bidang, txt, col }) {
         </div>
 
         <div className="flex items-center justify-between mb-1">
-          <h3 className="font-bold text-lg">{nama}</h3>
+          <h3 className="font-bold text-lg text-black-soft">{nama}</h3>
           <div className="flex gap-2">
             <a href={ig} target="_blank">
               <i className="fa-brands text-[18px]"></i>
