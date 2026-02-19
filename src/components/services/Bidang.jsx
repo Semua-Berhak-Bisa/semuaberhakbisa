@@ -11,7 +11,9 @@ export default function Layanan() {
     {
       title: "Front-end Web Dasar",
       category: "pemrograman",
-      col: "firstcol",
+      border: "border-firstcol",
+      bg: "bg-firstcol",
+      txt: "text-firstcol",
       tag: "Pemrograman",
       iconType: "fa-solid",
       logo: "",
@@ -20,7 +22,9 @@ export default function Layanan() {
     {
       title: "Bahasa Pemrograman Dasar",
       category: "pemrograman",
-      col: "firstcol",
+      border: "border-firstcol",
+      bg: "bg-firstcol",
+      txt: "text-firstcol",
       tag: "Pemrograman",
       iconType: "fa-solid",
       logo: "",
@@ -29,7 +33,9 @@ export default function Layanan() {
     {
       title: "Adobe Photoshop",
       category: "design",
-      col: "secondcol",
+      border: "border-secondcol",
+      bg: "bg-secondcol",
+      txt: "text-secondcol",
       tag: "Desain Grafis",
       iconType: "fa-solid",
       logo: "",
@@ -44,7 +50,9 @@ export default function Layanan() {
     {
       title: "Adobe Ilustrator",
       category: "design",
-      col: "secondcol",
+      border: "border-secondcol",
+      bg: "bg-secondcol",
+      txt: "text-secondcol",
       tag: "Desain Grafis",
       iconType: "fa-solid",
       logo: "",
@@ -53,7 +61,9 @@ export default function Layanan() {
     {
       title: "Figma",
       category: "design",
-      col: "secondcol",
+      border: "border-secondcol",
+      bg: "bg-secondcol",
+      txt: "text-secondcol",
       tag: "Desain Grafis",
       iconType: "fa-solid",
       logo: "",
@@ -62,7 +72,9 @@ export default function Layanan() {
     {
       title: "Cisco Packet Tracer",
       category: "jaringan",
-      col: "thirdcol",
+      border: "border-thirdcol",
+      bg: "bg-thirdcol",
+      txt: "text-thirdcol",
       tag: "Jaringan Komputer",
       iconType: "fa-solid",
       logo: "",
@@ -78,7 +90,9 @@ export default function Layanan() {
     {
       title: "WinBox Mikrotik",
       category: "jaringan",
-      col: "thirdcol",
+      border: "border-thirdcol",
+      bg: "bg-thirdcol",
+      txt: "text-thirdcol",
       tag: "Jaringan Komputer",
       iconType: "fa-solid",
       logo: "",
@@ -98,7 +112,9 @@ export default function Layanan() {
     {
       title: "Microsoft Word",
       category: "office",
-      col: "fourthcol",
+      border: "border-fourthcol",
+      bg: "bg-fourthcol",
+      txt: "text-fourthcol",
       tag: "Microsoft Office",
       iconType: "fa-brands",
       logo: "",
@@ -114,7 +130,9 @@ export default function Layanan() {
     {
       title: "Microsoft Excel",
       category: "office",
-      col: "fourthcol",
+      border: "border-fourthcol",
+      bg: "bg-fourthcol",
+      txt: "text-fourthcol",
       tag: "Microsoft Office",
       iconType: "fa-brands",
       logo: "",
@@ -129,7 +147,9 @@ export default function Layanan() {
     {
       title: "Microsoft Powerpoint",
       category: "office",
-      col: "fourthcol",
+      border: "border-fourthcol",
+      bg: "bg-fourthcol",
+      txt: "text-fourthcol",
       tag: "Microsoft Office",
       iconType: "fa-brands",
       logo: "",
@@ -160,43 +180,43 @@ export default function Layanan() {
             <div className="space-x-2 space-y-3 md:hidden">
               <button
                 onClick={() => handleFilter("all")}
-                className={`filter-btn ${activeFilter === "all" ? "active" : ""} w-fit rounded-full border border-firstcol px-3 py-1.5 text-[10px] hover:bg-transparent transition cursor-pointer`}
+                className={`${activeFilter === "all" ? "active-div" : ""} w-fit rounded-full border border-firstcol px-3 py-1.5 text-[10px]transition cursor-pointer hover:text-black-soft hover:scale-95`}
               >
                 Lihat Semua
               </button>
 
               <button
                 onClick={() => handleFilter("pemrograman")}
-                className={`filter-btn ${
-                  activeFilter === "pemrograman" ? "active" : ""
-                } w-fit rounded-full border border-firstcol px-3 py-1.5 text-[10px] hover:bg-transparent transition cursor-pointer`}
+                className={`${
+                  activeFilter === "pemrograman" ? "active-div" : ""
+                } w-fit rounded-full border border-firstcol px-3 py-1.5 text-[10px]transition cursor-pointer hover:text-black-soft hover:scale-95 `}
               >
                 Pemrograman
               </button>
 
               <button
                 onClick={() => handleFilter("design")}
-                className={`filter-btn ${
-                  activeFilter === "design" ? "active" : ""
-                } w-fit rounded-full border border-firstcol px-3 py-1.5 text-[10px] hover:bg-transparent transition cursor-pointer`}
+                className={`${
+                  activeFilter === "design" ? "active-div" : ""
+                } w-fit rounded-full border border-firstcol px-3 py-1.5 text-[10px]transition cursor-pointer hover:text-black-soft hover:scale-95`}
               >
                 Desain Grafis
               </button>
 
               <button
                 onClick={() => handleFilter("jaringan")}
-                className={`filter-btn ${
-                  activeFilter === "jaringan" ? "active" : ""
-                } w-fit rounded-full border border-firstcol px-3 py-1.5 text-[10px] hover:bg-transparent transition cursor-pointer`}
+                className={`${
+                  activeFilter === "jaringan" ? "active-div" : ""
+                } w-fit rounded-full border border-firstcol px-3 py-1.5 text-[10px]transition cursor-pointer hover:text-black-soft hover:scale-95`}
               >
                 Jaringan Komputer
               </button>
 
               <button
                 onClick={() => handleFilter("office")}
-                className={`filter-btn ${
-                  activeFilter === "office" ? "active" : ""
-                } w-fit rounded-full border border-firstcol px-3 py-1.5 text-[10px] hover:bg-transparent transition cursor-pointer`}
+                className={`${
+                  activeFilter === "office" ? "active-div" : ""
+                } w-fit rounded-full border border-firstcol px-3 py-1.5 text-[10px]transition cursor-pointer hover:text-black-soft hover:scale-95`}
               >
                 Microsoft Office
               </button>
@@ -206,43 +226,43 @@ export default function Layanan() {
             <div className="space-y-3 hidden md:block">
               <button
                 onClick={() => handleFilter("all")}
-                className={`filter-btn ${activeFilter === "all" ? "active" : ""} w-full rounded-sm border text-left px-4 py-2 text-sm hover:bg-transparent transition cursor-pointer`}
+                className={`${activeFilter === "all" ? "active-div" : ""} w-full rounded-sm border text-left px-4 py-2 text-smtransition cursor-pointer`}
               >
                 Lihat Semua
               </button>
 
               <button
                 onClick={() => handleFilter("pemrograman")}
-                className={`filter-btn ${
-                  activeFilter === "pemrograman" ? "active" : ""
-                } w-full rounded-sm border text-left px-4 py-2 text-sm hover:bg-transparent transition cursor-pointer`}
+                className={`${
+                  activeFilter === "pemrograman" ? "active-div" : ""
+                } w-full rounded-sm border text-left px-4 py-2 text-smtransition cursor-pointer`}
               >
                 Pemrograman
               </button>
 
               <button
                 onClick={() => handleFilter("design")}
-                className={`filter-btn ${
-                  activeFilter === "design" ? "active" : ""
-                } w-full rounded-sm border text-left px-4 py-2 text-sm hover:bg-transparent transition cursor-pointer`}
+                className={`${
+                  activeFilter === "design" ? "active-div" : ""
+                } w-full rounded-sm border text-left px-4 py-2 text-smtransition cursor-pointer`}
               >
                 Desain Grafis
               </button>
 
               <button
                 onClick={() => handleFilter("jaringan")}
-                className={`filter-btn ${
-                  activeFilter === "jaringan" ? "active" : ""
-                } w-full rounded-sm border text-left px-4 py-2 text-sm hover:bg-transparent transition cursor-pointer`}
+                className={`${
+                  activeFilter === "jaringan" ? "active-div" : ""
+                } w-full rounded-sm border text-left px-4 py-2 text-smtransition cursor-pointer`}
               >
                 Jaringan Komputer
               </button>
 
               <button
                 onClick={() => handleFilter("office")}
-                className={`filter-btn ${
-                  activeFilter === "office" ? "active" : ""
-                } w-full rounded-sm border text-left px-4 py-2 text-sm hover:bg-transparent transition cursor-pointer`}
+                className={`${
+                  activeFilter === "office" ? "active-div" : ""
+                } w-full rounded-sm border text-left px-4 py-2 text-smtransition cursor-pointer`}
               >
                 Microsoft Office
               </button>
@@ -256,7 +276,9 @@ export default function Layanan() {
                 category={service.category}
                 activeFilter={activeFilter}
                 title={service.title}
-                col={service.col}
+                border={service.border}
+                bg={service.bg}
+                txt={service.txt}
                 tag={service.tag}
                 iconType={service.iconType}
                 logo={service.logo}
@@ -274,7 +296,9 @@ function ServiceCard({
   category,
   activeFilter,
   title,
-  col,
+  border,
+  bg,
+  txt,
   tag,
   iconType,
   logo,
@@ -287,17 +311,17 @@ function ServiceCard({
   return (
     <div className="service-card">
       <div
-        className={`card flex flex-wrap border-2 border-${col} rounded-xl shadow-sm`}
+        className={`card flex flex-wrap border-2 ${border} rounded-xl shadow-sm`}
       >
         <div
-          className={`w-full border-b-2 border-${col} px-3 pb-4 pt-7 flex flex-wrap justify-between md:w-[40%] md: md:border-r-2 md:border-b-0 md:px-5 md:py-7`}
+          className={`w-full border-b-2 ${border} px-3 pb-4 pt-7 flex flex-wrap justify-between md:w-[40%] md: md:border-r-2 md:border-b-0 md:px-5 md:py-7`}
         >
           <div className="w-[65%] md:w-full">
             <h3 className="text-lg/5 font-bold mb-2 md:text-xl">{title}</h3>
 
             <div className="flex items-center space-x-1">
               <div
-                className={`w-6 h-6 flex justify-center items-center rounded-full bg-${col}`}
+                className={`w-6 h-6 flex justify-center items-center rounded-full ${bg}`}
               >
                 <i
                   className={`${iconType} text-xs text-light transition-all duration-500 ease md:text-sm`}
@@ -305,7 +329,7 @@ function ServiceCard({
                   {logo}
                 </i>
               </div>
-              <p className={`text-${col} font-semibold text-sm md:text-base`}>
+              <p className={`${txt} font-semibold text-sm md:text-base`}>
                 {tag}
               </p>
             </div>
@@ -314,7 +338,7 @@ function ServiceCard({
           <div className="mt-2 md:mt-8">
             <a
               href="#"
-              className={`btn-template bg-${col} border-${col} hover:bg-transparent`}
+              className={`btn-template ${bg} ${border} hover:bg-transparent`}
             >
               Mulai Belajar
             </a>

@@ -20,22 +20,7 @@ export default function Layanan() {
               ig="instagram.com/ahmadajrl_"
               li="linkedin.com/in/ahmad-ajril-mumtazi-35a540369/"
               bidang="Desain Grafis"
-              txt="Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  quisque faucibus ex sapien vitae pellentesque sem placerat in
-                  id cursus mi."
               col="text-secondcol"
-            ></Card>
-
-            <Card
-              img={shandy}
-              nama="Shandy Dwi"
-              ig="instagram.com/firshandydwi_"
-              li="linkedin.com/in/firshandy-dwi-cahyo/"
-              bidang="Pemrograman"
-              txt="Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  quisque faucibus ex sapien vitae pellentesque sem placerat in
-                  id cursus mi."
-              col="text-firstcol"
             ></Card>
 
             <Card
@@ -44,9 +29,6 @@ export default function Layanan() {
               ig="instagram.com/rifkiardiansyah_18"
               li="linkedin.com/in/rifki-ardiyansah-00aa7426a/"
               bidang="Jaringan Komputer"
-              txt="Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  quisque faucibus ex sapien vitae pellentesque sem placerat in
-                  id cursus mi."
               col="text-thirdcol"
             ></Card>
 
@@ -56,10 +38,16 @@ export default function Layanan() {
               ig="instagram.com/shlll.fa"
               li="linkedin.com/in/sahal-ferlyaqdhan-aufa-858a8a318/"
               bidang="Microsoft Office"
-              txt="Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  quisque faucibus ex sapien vitae pellentesque sem placerat in
-                  id cursus mi."
               col="text-fourthcol"
+            ></Card>
+
+            <Card
+              img={shandy}
+              nama="Shandy Dwi"
+              ig="instagram.com/firshandydwi_"
+              li="linkedin.com/in/firshandy-dwi-cahyo/"
+              bidang="Pemrograman"
+              col="text-firstcol"
             ></Card>
 
             <Card
@@ -68,9 +56,6 @@ export default function Layanan() {
               ig="instagram.com/yrdn666"
               li="linkedin.com/in/yordankece/"
               bidang="Jaringan Komputer"
-              txt="Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  quisque faucibus ex sapien vitae pellentesque sem placerat in
-                  id cursus mi."
               col="text-thirdcol"
             ></Card>
           </div>
@@ -80,7 +65,7 @@ export default function Layanan() {
   );
 }
 
-function Card({ img, nama, ig, li, bidang, txt, col }) {
+function Card({ img, nama, ig, li, bidang, col }) {
   return (
     <div className="w-full md:w-1/2 lg:w-1/3 px-4">
       <div className="bg-white rounded-xl shadow p-4">
@@ -96,10 +81,10 @@ function Card({ img, nama, ig, li, bidang, txt, col }) {
           <h3 className="font-bold text-lg text-black-soft">{nama}</h3>
           <div className="flex gap-2">
             <a href={ig} target="_blank">
-              <i className="fa-brands text-[18px]"></i>
+              <i className="fa-brands text-[20px]"></i>
             </a>
             <a href={li} target="_blank">
-              <i className="fa-brands text-[18px]"></i>
+              <i className="fa-brands text-[20px]"></i>
             </a>
           </div>
         </div>
@@ -107,8 +92,6 @@ function Card({ img, nama, ig, li, bidang, txt, col }) {
         <p className={`${col} text-sm font-semibold text-dark-gray mb-2`}>
           Mentor {bidang}
         </p>
-
-        <p className="text-sm text-dark-gray leading-relaxed">{txt}</p>
       </div>
     </div>
   );

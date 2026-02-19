@@ -8,8 +8,8 @@ export default function Wilayah() {
             <span class="text-firstcol">#SemuaBerhakBisa</span>
           </h2>
           <p class="text-center mt-2 md:text-base text-black-soft dark:text-light mb-10 max-w-md md:max-w-xl">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit quisque
-            faucibus ex sapien vitae pellentesque sem.
+            Tersedia sesi pembelajaran offline di beberapa wilayah Tangerang
+            untuk memudahkan akses belajar secara langsung dan interaktif.
           </p>
 
           <div class="w-full flex flex-wrap justify-center gap-4 md:gap-x-10 md:max-w-3xl">

@@ -36,7 +36,7 @@ export default function Navbar() {
             <li>
               <NavLink
                 to="/"
-                className="flex py-2 md:text-sm hover:text-firstcol"
+                className="flex py-2 md:text-sm hover:text-firstcol hover-underline"
               >
                 Beranda
               </NavLink>
@@ -44,7 +44,7 @@ export default function Navbar() {
             <li>
               <NavLink
                 to="/tentang"
-                className="flex py-2 md:text-sm hover:text-firstcol"
+                className="flex py-2 md:text-sm hover:text-firstcol hover-underline"
               >
                 Tentang Komunitas
               </NavLink>
@@ -52,7 +52,7 @@ export default function Navbar() {
             <li>
               <NavLink
                 to="/layanan"
-                className="flex py-2 md:text-sm hover:text-firstcol"
+                className="flex py-2 md:text-sm hover:text-firstcol hover-underline"
               >
                 Bidang Layanan
               </NavLink>
@@ -102,7 +102,7 @@ export default function Navbar() {
                 <NavLink
                   to="/"
                   onClick={() => setMenuOpen(false)}
-                  className="flex py-1 md:text-sm hover:text-firstcol"
+                  className="flex py-1 md:text-sm hover:text-firstcol hover-underline"
                 >
                   Beranda
                 </NavLink>
@@ -111,7 +111,7 @@ export default function Navbar() {
                 <NavLink
                   to="/tentang"
                   onClick={() => setMenuOpen(false)}
-                  className="flex py-1 md:text-sm hover:text-firstcol"
+                  className="flex py-1 md:text-sm hover:text-firstcol hover-underline"
                 >
                   Tentang Komunitas
                 </NavLink>
@@ -120,7 +120,7 @@ export default function Navbar() {
                 <NavLink
                   to="/layanan"
                   onClick={() => setMenuOpen(false)}
-                  className="flex py-1 md:text-sm hover:text-firstcol"
+                  className="flex py-1 md:text-sm hover:text-firstcol hover-underline"
                 >
                   Bidang Layanan
                 </NavLink>

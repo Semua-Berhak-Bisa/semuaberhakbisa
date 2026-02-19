@@ -1,4 +1,13 @@
-export default function KerjaSama() {
+import { useNavigate } from "react-router-dom";
+
+export default function KerjaSama({ data }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    if (!data) {
+      navigate("/404");
+    }
+  };
   return (
     <section className="w-full flex justify-center px-6 py-20 md:px-12 md:py-20">
       <div className="container flex justify-center flex-wrap">
@@ -7,14 +16,17 @@ export default function KerjaSama() {
             Ingin Bekerja Sama?
           </h2>
           <p className="text-center mt-2 md:text-base text-black-soft dark:text-light mb-10 max-w-md md:max-w-xl">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit quisque
-            faucibus ex sapien vitae pellentesque sem.
+            Tertarik berkolaborasi bersama kami dalam program pendidikan dan
+            pengembangan skill? Mari wujudkan dampak positif bersama.
           </p>
 
           <div className="w-full flex justify-center">
-            <a href="#" className="btn-template font-semibold md:text-sm">
-              Hubungi Kami
-            </a>
+            <button
+              onClick={handleClick}
+              className="btn-template font-semibold md:text-sm"
+            >
+              Diskusi Kolaborasi
+            </button>
           </div>
         </div>
       </div>

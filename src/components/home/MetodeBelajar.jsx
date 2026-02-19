@@ -12,9 +12,8 @@ export default function MetodeBelajar() {
             <span className="text-firstcol">#SemuaBerhakBisa</span>
           </h2>
           <p className="mt-2 mb-6 text-black-soft dark:text-light max-w-md md:text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit quisque
-            faucibus ex sapien vitae pellentesque sem placerat in id cursus mi
-            tellus.
+            Pilih metode belajar yang sesuai dengan gaya kamu, dengan sistem
+            yang jelas dan pembelajaran yang tetap interaktif.
           </p>
           <NavLink
             to="/layanan"
@@ -28,12 +27,12 @@ export default function MetodeBelajar() {
           <Card
             img={offline}
             title="Metode Belajar Online"
-            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            desc="Pembelajaran online dilakukan secara langsung setiap pukul 20.00 WIB. Kamu dapat mengikuti kelas dari rumah melalui platform yang telah disediakan, tetap bisa berdiskusi, dan bertanya secara real-time bersama mentor."
           />
           <Card
             img={online}
             title="Metode Belajar Offline"
-            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            desc="Untuk kamu yang ingin suasana belajar tatap muka, tersedia sesi offline sesuai jadwal yang ditentukan. Interaksi langsung membantu kamu lebih fokus dan memahami materi secara mendalam."
           />
         </div>
       </div>

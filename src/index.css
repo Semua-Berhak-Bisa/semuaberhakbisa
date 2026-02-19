@@ -37,19 +37,23 @@
     );
     transition: background 0.5s ease-in-out;
   }
+
+  .active-div {
+    @apply bg-firstcol text-white;
+  }
 }
 
 :root {
   --bg-color: #ffffff;
   --text-color: #0c090a;
   --bg-from: #ffffff;
-  --bg-to: #0ea5e9; /* firstcol */
+  --bg-to: #0ea5e9;
 }
 
 html.dark {
   --bg-color: #0c090a;
   --text-color: #f4f0ec;
-  --bg-from: #0b0b0f; /* black-soft */
+  --bg-from: #0b0b0f;
   --bg-to: #0ea5e9;
 }
 
@@ -159,4 +163,42 @@ body {
   animation-delay: -1s;
   transform-origin: -24vw 0vh;
   box-shadow: -40vmin 0 5.8306773494470105vmin;
+}
+
+.hover-underline {
+  @apply relative inline-block;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: #20ace1;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#f1f1f1];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-firstcol rounded-4xl;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-firstcol/90;
 }
